@@ -46,6 +46,7 @@
 
         input.addEventListener("input", updateValue);
 
+        //J'utilise textContent au lieu de innerHTML pour m'assurer que le texte saisi dans l'entrée est traité comme du texte, et non comme du html ou du js.
         function updateValue(e) {
             log.textContent = e.target.value;
         }
